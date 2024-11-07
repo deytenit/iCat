@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dMV-MK-ShB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TextedCatSB-->
+        <scene sceneID="7L9-u0-V3n">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TextedCat" referencedIdentifier="TextedCatSB" id="mFO-sS-LTI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Texted Cat" id="B8P-Im-otw">
+                        <imageReference key="image" image="textformat.size.larger" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wa-Im-5eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="-23"/>
+        </scene>
+        <!--PlainCatSB-->
+        <scene sceneID="5tq-y9-Frt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlainCat" referencedIdentifier="PlainCatSB" id="bhy-Sv-Agw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Plain Cat" id="ZVs-LL-eMI">
+                        <imageReference key="image" image="cat.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvS-LQ-dNq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="-394"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IOk-6E-mOa">
+            <objects>
+                <tabBarController id="dMV-MK-ShB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ub9-a4-FLg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bhy-Sv-Agw" kind="relationship" relationship="viewControllers" id="frb-QC-y78"/>
+                        <segue destination="mFO-sS-LTI" kind="relationship" relationship="viewControllers" id="Tvh-eD-KRH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEX-M2-b4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-756" y="-195"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.fill" catalog="system" width="128" height="102"/>
+        <image name="textformat.size.larger" catalog="system" width="128" height="128"/>
+    </resources>
+</document>
